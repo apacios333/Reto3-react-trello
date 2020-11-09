@@ -1,0 +1,45 @@
+@import '../../colors.scss';
+.CardForm{
+    width: 18em;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 0.4em;
+    background-color: $mygrey;
+    color: $mydark;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input, button{
+        all:unset;
+        border-radius: 0.4em;
+        transition: all 0.5s;
+    }
+    input{
+        width: 15em;
+        padding: 0.3em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        background-color: white;
+        color: black;
+    }
+    button {
+        margin-bottom: 0.5em;
+        padding: 0.2em;
+        width: 8em;
+        text-align: center;
+        background-color: $mydark;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: $mygreenligth;
+        color: $mydark;
+    }
+    button:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+}

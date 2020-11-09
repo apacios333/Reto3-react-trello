@@ -1,0 +1,8 @@
+@import './colors.scss';
+
+.App{
+    background-color: $mygreen;
+     
+    display: flex;
+    flex-direction: column;
+}

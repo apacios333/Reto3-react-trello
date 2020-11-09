@@ -1,0 +1,48 @@
+@import '../../colors.scss';
+
+.CardList{
+    width: 18em;
+    min-height: 30em;
+    margin: 0.5em;    
+    border-radius: 0.4em;
+    background-color:$mygrey;
+
+    display: flex;
+    flex-direction: column;
+
+    .CardListTittle{
+        margin: 1em;
+        margin-bottom: 0em;
+        color:$mydark;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h3{ //si sobrepasamos el contenedor, salta de línea
+            word-break: break-all;
+            white-space: normal;
+        }
+        .ButtonDeleteCard{
+                all:unset;
+                width: 1.5em;
+                height: 1.5em;
+                background-color:$mygrey;
+                color: $mydark;
+                border-radius: 0.4em;
+                text-align: center;
+                transition: all 0.2s;
+                cursor: pointer;
+        }
+    
+        .ButtonDeleteCard:hover {
+            background-color: red;
+            color: white;
+        }
+    }
+    .ContainerItems{
+        flex-grow: 1;
+        
+        display: flex;
+        flex-direction: column;
+    }
+}

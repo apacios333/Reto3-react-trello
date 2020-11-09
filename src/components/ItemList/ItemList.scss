@@ -1,0 +1,44 @@
+@import '../../colors.scss';
+
+.ItemList{
+    margin: 0.5em;
+    padding: 0.5em;
+    padding-left: 0.5em;
+    border-radius: 0.3em;
+    background-color: $myligth;
+
+    display: flex;
+    flex-direction: column;
+
+    .ItemListContent{      
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        p { //si sobrepasamos el contenedor, salta de línea
+            word-break: break-all;
+            white-space: normal;
+        }
+        .ButtonDeleteItem {
+            all:unset;
+            width: 1.5em;
+            height: 1.5em;
+            background-color:$myligth;
+            color: $mydark;
+            border-radius: 0.4em;
+            text-align: center;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+        .ButtonDeleteItem:hover {
+            background-color: red;
+            color: white;
+        }
+    }
+}
+
+
+
+
+    

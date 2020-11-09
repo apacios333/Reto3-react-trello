@@ -1,0 +1,56 @@
+@import '../../../colors.scss';
+
+.EditItem {
+   
+    background-color: $myligth;
+    color: $mydark;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ButtonEditItem { 
+        all:unset;
+        align-self: flex-end;
+        font-size: 0.8em;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+    .ButtonEditItem:hover {
+        color: $mygreenligth;
+    }
+
+    .InputUpdateItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        input, button{
+            all:unset;
+            border-radius: 0.4em;
+            transition: all 0.5s;
+        }
+        input{
+            width: 15em;
+            padding: 0.3em;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            background-color: white;
+            color: black;
+    }
+        button {
+            margin-bottom: 0.5em;
+            padding: 0.2em;
+            width: 10em;
+            text-align: center;
+            background-color: $myyellow;
+            color:$mydark;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: $mygreenligth;
+
+        }
+    }
+}
